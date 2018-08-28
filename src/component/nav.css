@@ -1,0 +1,16 @@
+.nav-item{
+    color: #FFF !important;
+    margin-right: 16px;
+}
+nav{
+    margin-top: 42px !important;
+}
+.nav-Active{
+    width: 138px;
+  height: 40px;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #ffffff;
+}
