@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
 import Recent  from './recent';
 import {BrowserRouter as Router,Link} from 'react-router-dom';
+
 class Search extends Component{
+    
     state={
         userInput:'',
         items:[
@@ -26,12 +28,19 @@ class Search extends Component{
             items:listArray
         });
     }
+   
     render(){
+        const black={
+            backgroundColor: "#000"
+        }
         return(
             <div className="search">
                 <input type="text" className="input-decorator" placeholder="Search" onChange={(e)=>this.changeUserInput(e.target.value)} value={this.state.userInput}/>
                 <button className="BG" onClick={()=> this.addItem(this.state.userInput)}>
-                    Click Me
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button className="Bg2" >
+                    <i class="fas fa-align-left"></i>
                 </button>
                
                 <br/>
@@ -43,10 +52,13 @@ class Search extends Component{
                             <Link to={"/details/"+item.name} ><Recent item={item.name} key={index} className="round-link"/></Link>)
                     })
                 }
-               <Recent item="Show ALl"/>)
+              
+               <span className="layer black" >Show All</span>
+               )
                 
             </div>
         )
     }
 }
 export default Search;
+// <Recent style={black} item="Show ALl"/>

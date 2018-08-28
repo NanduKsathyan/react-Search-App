@@ -2,6 +2,10 @@ import React from 'react';
 import './nav.css';
 import logo from '../assets/ic-logo.png';
 const Nav=()=>{
+    const white={
+        color: "#FFF",
+        marginRight:"16px"
+    }
     return(
         <div>
             <nav className="navbar navbar-expand-lg navbar-light ">
@@ -18,10 +22,10 @@ const Nav=()=>{
                 
                 <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
                     <div className="navbar-nav  ">
-                    <a className="nav-item nav-link " href="#">Suggested Topics <span className="sr-only">(current)</span></a>
-                    <a className="nav-item nav-link" href="#">Favorites</a>
-                    <a className="nav-item nav-link" href="#">Bookmarks</a>
-                    <a className="nav-item nav-link nav-Active" href="#">Editorial Picks</a>
+                    <a className="nav-item nav-link " style={white} href="#">Suggested Topics <span className="sr-only">(current)</span></a>
+                    <a className="nav-item nav-link" style={white} href="#">Favorites</a>
+                    <a className="nav-item nav-link" style={white}  href="#">Bookmarks</a>
+                    <a className="nav-item nav-link nav-Active" style={white}  href="#">Editorial Picks</a>
                     </div>
                 </div>
                 </div>

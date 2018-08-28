@@ -1,5 +1,5 @@
 .nav-item{
-    color: #FFF !important;
+    color: #FFF;
     margin-right: 16px;
 }
 nav{
@@ -13,4 +13,7 @@ nav{
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0);
   border: solid 1px #ffffff;
+}
+.navbar {
+    left: -15px;
 }
